@@ -1,5 +1,4 @@
 import plants from '../seed'
-import {Row, Col} from 'react-bootstrap'
 
 const Plants = () => {
     
