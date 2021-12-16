@@ -13,9 +13,17 @@ const Plants = () => {
     
     return (
         <div>
+            
+            <form className="searchBox">
+                <input type="search"
+                placeholder="Search for a Plant"/>
+                <button>Search</button>
+            </form>
+            
             <div className="plants">
                 {plantInfo}
             </div>
+
         </div>
     )
 }
