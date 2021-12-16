@@ -3,6 +3,12 @@
   min-height: 80vh;
 }
 
+.title{
+  font-family: 'Questrial', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
 .main {
   min-height: 90vh;
 }
