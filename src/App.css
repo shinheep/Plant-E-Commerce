@@ -7,10 +7,31 @@
   font-family: 'Questrial', sans-serif;
   font-size: 60px;
   font-weight: bold;
+  padding: 0;
+}
+
+.oneLiner{
+  margin-bottom: 15px;
 }
 
 .main {
   min-height: 95vh;
+  align-items: center;
+}
+
+.shopPlantsButton {
+  background: #095C5C;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  height: 40px;
+  width: 200px;
+}
+
+.jungle{
+  bottom: 0;
+  position: absolute;
 }
 
 .plants{
@@ -19,8 +40,15 @@
   justify-content: center;
 }
 
+.plantSearchButton {
+  background: #095C5C;
+  color: white;
+  border-radius: 50px;
+}
+
 .plant{
   margin: 5px;
+  font-family: "Alegreya";
 }
 
 .plantPic {

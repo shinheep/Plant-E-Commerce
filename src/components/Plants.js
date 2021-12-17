@@ -1,26 +1,30 @@
-import plants from '../seed'
+import React, {useState, useRef} from "react";
 
-const Plants = () => {
+const Plants = (props) => {
     
-    const plantInfo = plants.map(plant => (
-        <div className="plant">
-            <img src={plant.image} alt={plant.name} className="plantPic"/>
-            <h4>{plant.name}</h4>
-            <div>${plant.price}</div>
-        </div>
-    ))
+    const plantInput = useRef("");
+
+    const getSearchTerm = () => {
+        props.handleSearch(plantInput.current.value)
+    }
     
     return (
         <div>
             
             <form className="searchBox">
-                <input type="search"
-                placeholder="Search for a Plant"/>
-                <button>Search</button>
+                <input 
+                    ref={plantInput}
+                    type="search" 
+                    placeholder="Search for a Plant"
+                    value={props.searchTerm}
+                    onChange={getSearchTerm} />
+                <button className="plantSearchButton" onClick={props.handleSearch}>
+                    Search
+                </button>
             </form>
             
             <div className="plants">
-                {plantInfo}
+                {props.plantList}
             </div>
 
         </div>

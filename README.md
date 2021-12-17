@@ -51,7 +51,8 @@ https://res.cloudinary.com/dxqwpud0l/image/upload/v1639627338/Screen_Shot_2021-1
 
 ## Additional Libraries
 
-TBD.
+LottieFiles
+Font Awesome
 
 ## Code Snippet
 
