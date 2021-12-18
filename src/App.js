@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Link, Route, Routes} from "react-router-dom"
+import {Link, Route, Switch} from "react-router-dom"
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -14,8 +14,10 @@ function App() {
   const [plantList, setPlantList] = useState([])
   
   const plantInfo = plants.map(plant => (
-    <div className="plant">            
-        <Link to={'/plant/'}><img src={plant.image} alt={plant.name} className="plantPic"/></Link>
+    <div className="plant" key={plant.id}>            
+        <Link to={`/plant/${plant.id}`}>
+          <img src={plant.image} alt={plant.name} className="plantPic"/>
+        </Link>
         <div className="plantName">{plant.name}</div>
         <div className="plantPrice">${plant.price}</div>
     </div>
@@ -26,7 +28,7 @@ function App() {
     fetch(plants)
       .then((res) => res.json())
       .then((data) => {
-        setPlantList(data)
+        setPlantList(data.plant)
       })
   }
 
@@ -39,7 +41,7 @@ function App() {
       setSearchTerm(searchTerm);
       if (searchTerm !== "") {
          const newPlantList = plantList.filter((plant) => {
-             return Object.values(plant)
+             return Object.values(plant.name)
              .join("")
              .toLowerCase()
              .includes(searchTerm.toLowerCase());
@@ -54,16 +56,22 @@ function App() {
     <div className="App">
       <Header/>
 
-      <Routes>
-        <Route path="/" element={<><Main/><Plants 
-          plantList={searchTerm.length < 1 ? plantInfo : searchResults}
+      <Switch>
+        <Route exact path="/" >
+          <Main/>
+          <Plants 
+          // plantList={searchTerm.length < 1 ? plantInfo : searchResults}
+          plantList={plantInfo}
           handleSearch={handleSearch} 
-          searchTerm={searchTerm}/></>}/>
-          {/* <Route path='plants' element={<Plants plantList={searchTerm.length < 1 ? plantInfo : searchResults}
-              handleSearch={handleSearch} 
-              searchTerm={searchTerm}/>} /> */}
-          <Route path='plant' element={<Plant/>}/>
-      </Routes>
+          searchTerm={searchTerm}/>
+        </Route>
+
+        {/* <Route path='/plant'>
+          <Plant
+          plantList={plantInfo}/>
+        </Route> */}
+        <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps} />}/>
+      </Switch>
 
     </div>
   );

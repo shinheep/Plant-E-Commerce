@@ -12,11 +12,13 @@
 
 .oneLiner{
   margin-bottom: 15px;
+  font-family: "Alegreya";
 }
 
 .main {
   min-height: 95vh;
   align-items: center;
+  background: lightgrey;
 }
 
 .shopPlantsButton {
