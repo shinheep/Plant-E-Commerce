@@ -31,9 +31,8 @@
   width: 200px;
 }
 
-.jungle{
-  bottom: 0;
-  position: absolute;
+.plantsContainer{
+  margin-top: 20px;
 }
 
 .plants{
@@ -56,13 +55,58 @@
 .plantPic {
   height: 250px;
   width: 250px;
-  border-radius: 50px;
+  border-radius: 20px;
   margin: 10px;
 }
 
 .plantPic:hover{
   opacity: 0.7;
   cursor: pointer;
+}
+
+.singlePlantContainer{
+  display: flex;
+  min-height: 93vh;
+  background: beige;
+}
+
+.singlePlant{
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.indivPlantPic{
+  margin-top: 20px;
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.plantInfo{
+  background: #D5E4E3;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.indivPlantName{
+  font-family: 'Questrial', sans-serif;
+  font-size: 30px;
+}
+
+.indivPlantDescription{
+  font-family: "Alegreya";
+  font-size: 15px;
+}
+
+.indivPlantPrice{
+  font-family: "Alegreya";
+  font-size: 20px;
 }
 
 .footer {

@@ -9,7 +9,7 @@ const Plants = (props) => {
     const plantInput = useRef("");
     
     return (
-        <div>
+        <div className="plantsContainer">
             
             <form className="searchBox">
                 <input 
@@ -18,13 +18,15 @@ const Plants = (props) => {
                     placeholder="Search for a Plant"
                     value={props.searchTerm}
                     onChange={(getSearchTerm)} />
-                <button className="plantSearchButton" onClick={props.handleSearch}>
+                <button className="plantSearchButton" onClick={() => {
+                    props.handleClearClick({getSearchTerm})
+                }}>
                     Search
                 </button>
             </form>
             
             <div className="plants">
-                {props.plantList}
+                {props.plantData}
             </div>
 
         </div>

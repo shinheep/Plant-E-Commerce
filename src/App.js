@@ -11,9 +11,10 @@ import plants from './seed'
 function App() {
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResults] = useState([]);
-  const [plantList, setPlantList] = useState([])
+  const [plantList, setPlantList] = useState([]);
+  const [clearInput, setClearInput] = useState("");
   
-  const plantInfo = plants.map(plant => (
+  const plantInfo = plants && plants.map(plant => (
     <div className="plant" key={plant.id}>            
         <Link to={`/plant/${plant.id}`}>
           <img src={plant.image} alt={plant.name} className="plantPic"/>
@@ -24,33 +25,46 @@ function App() {
     
 ))
 
-  const makeAPICall = () => {
-    fetch(plants)
-      .then((res) => res.json())
-      .then((data) => {
-        setPlantList(data.plant)
-      })
-  }
+    const settingPlantData = (plants) => {
+      setPlantList(plantInfo)
+    }
+
+    console.log(plantInfo)
+
+  // const makeAPICall = (plants) => {
+  //   fetch(plants)
+  //     .then((res) => res.json())
+  //     .then((plants) => {
+  //       console.log(plants)
+  //     })
+  // }
+
 
   useEffect(() => {
-    makeAPICall();
+    settingPlantData();
   }, [])
 
-  const handleSearch = (event, searchTerm) => {
+  const handleSearch = (searchTerm) => {
       console.log("Plant found!");
       setSearchTerm(searchTerm);
       if (searchTerm !== "") {
          const newPlantList = plantList.filter((plant) => {
-             return Object.values(plant.name)
-             .join("")
-             .toLowerCase()
-             .includes(searchTerm.toLowerCase());
+             return Object.values(plant)
+              .join("")
+              .toLowerCase()
+              .includes(searchTerm.toLowerCase());
          })
          setSearchResults(newPlantList);
       } else {
           setSearchResults(plantList);
       }
   };
+
+  const handleClearClick = () => {
+    setClearInput(true);
+    setSearchTerm("");
+    setSearchResults(plantList);
+  }
   
   return (
     <div className="App">
@@ -60,10 +74,11 @@ function App() {
         <Route exact path="/" >
           <Main/>
           <Plants 
-          // plantList={searchTerm.length < 1 ? plantInfo : searchResults}
-          plantList={plantInfo}
+          plantData={searchTerm.length < 1 ? plantList : searchResults}
+          // plantList={plantInfo}
           handleSearch={handleSearch} 
-          searchTerm={searchTerm}/>
+          searchTerm={searchTerm}
+          handleClearClick={handleClearClick}/>
         </Route>
 
         {/* <Route path='/plant'>
