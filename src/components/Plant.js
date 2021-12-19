@@ -37,7 +37,7 @@ const Plant = (props) => {
                         
                     </Form.Control>
 
-                    <button>Add To Cart</button>
+                    <button className="addToCart">Add To Cart</button>
                 </div>
             </div>
         </div>

@@ -80,14 +80,14 @@
 
 .indivPlantPic{
   margin-top: 20px;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border-radius: 20px;
 }
 
 .plantInfo{
   background: #D5E4E3;
-  width: 400px;
+  width: 300px;
   margin: 0 auto;
   border-radius: 20px;
   margin-top: 10px;
@@ -107,6 +107,12 @@
 .indivPlantPrice{
   font-family: "Alegreya";
   font-size: 20px;
+}
+
+.addToCart{
+  background: #095C5C;
+  color: white;
+  border-radius: 50px;
 }
 
 .footer {

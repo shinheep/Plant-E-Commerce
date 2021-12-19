@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Link, Route, Switch} from "react-router-dom"
 import './App.css';
+import Cart from './components/Cart';
+import Login from './components/Login';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -41,7 +43,7 @@ function App() {
 
 
   useEffect(() => {
-    settingPlantData();
+    settingPlantData()
   }, [])
 
   const handleSearch = (searchTerm) => {
@@ -60,11 +62,12 @@ function App() {
       }
   };
 
+
   const handleClearClick = () => {
-    setClearInput(true);
+    setClearInput(0);
     setSearchTerm("");
     setSearchResults(plantList);
-  }
+  };
   
   return (
     <div className="App">
@@ -76,7 +79,7 @@ function App() {
           <Plants 
           plantData={searchTerm.length < 1 ? plantList : searchResults}
           // plantList={plantInfo}
-          handleSearch={handleSearch} 
+          searchKeyword={handleSearch} 
           searchTerm={searchTerm}
           handleClearClick={handleClearClick}/>
         </Route>
@@ -86,6 +89,10 @@ function App() {
           plantList={plantInfo}/>
         </Route> */}
         <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps} />}/>
+
+        <Route exact path="/cart"><Cart/></Route>
+
+        <Route exact path="/login"><Login/></Route>
       </Switch>
 
     </div>
