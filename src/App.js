@@ -51,7 +51,9 @@ function App() {
       setSearchTerm(searchTerm);
       if (searchTerm !== "") {
          const newPlantList = plantList.filter((plant) => {
-             return Object.values(plant)
+           console.log('plant', plant)
+           console.log('plantName', plant.props.children[0].props.children.props.alt)
+             return Object.values(plant.props.children[0].props.children.props.alt)
               .join("")
               .toLowerCase()
               .includes(searchTerm.toLowerCase());

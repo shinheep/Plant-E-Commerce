@@ -4,7 +4,7 @@ const Plants = (props) => {
 
 
     const getSearchTerm = () => {
-        props.handleSearch(plantInput.current.value)
+        props.searchKeyword(plantInput.current.value)
     };
     const plantInput = useRef("");
     
@@ -17,7 +17,7 @@ const Plants = (props) => {
                     type="search" 
                     placeholder="Search for a Plant"
                     value={props.searchTerm}
-                    onChange={(getSearchTerm)} />
+                    onChange={getSearchTerm} />
                 <button className="plantSearchButton" onClick={() => {
                     props.handleClearClick({getSearchTerm})
                 }}>
