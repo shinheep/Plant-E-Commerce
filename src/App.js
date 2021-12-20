@@ -33,14 +33,6 @@ function App() {
 
     console.log(plantInfo)
 
-  // const makeAPICall = (plants) => {
-  //   fetch(plants)
-  //     .then((res) => res.json())
-  //     .then((plants) => {
-  //       console.log(plants)
-  //     })
-  // }
-
 
   useEffect(() => {
     settingPlantData()
@@ -80,16 +72,11 @@ function App() {
           <Main/>
           <Plants 
           plantData={searchTerm.length < 1 ? plantList : searchResults}
-          // plantList={plantInfo}
           searchKeyword={handleSearch} 
           searchTerm={searchTerm}
           handleClearClick={handleClearClick}/>
         </Route>
 
-        {/* <Route path='/plant'>
-          <Plant
-          plantList={plantInfo}/>
-        </Route> */}
         <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps} />}/>
 
         <Route exact path="/cart"><Cart/></Route>

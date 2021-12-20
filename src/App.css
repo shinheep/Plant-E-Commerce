@@ -32,7 +32,12 @@
 }
 
 .plantsContainer{
+  background: rgb(243, 236, 245);
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 20px;
+  padding: 15px;
 }
 
 .plants{
@@ -64,10 +69,19 @@
   cursor: pointer;
 }
 
+.singlePlantContainerContainer{
+  background: beige;
+}
+
+.goBackButton{
+  background: #095C5C;
+  color: white;
+  border-radius: 50px;
+}
+
 .singlePlantContainer{
   display: flex;
   min-height: 93vh;
-  background: beige;
 }
 
 .singlePlant{
@@ -91,6 +105,7 @@
   margin: 0 auto;
   border-radius: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
 }
 

@@ -46,6 +46,30 @@ const plants = [
         'image':'/plant_images/aloeVera.jpeg',
         'price': 20,
         'countInStock': 4
+    },
+    {
+        'id': 7,
+        'name': 'Monstera Deliciosa Albo Variegata',
+        'description': "Monstera deliciosa 'Albo Variegata' is an impressive, spreading, easy-to-grow, evergreen and generally low maintenance perennial plant. This cultivar produces attractive variegated leaves marbled with white colouring. This houseplant lives happily in full or partial shade. However, it will grow faster in bright light",
+        'image':'/plant_images/monsteraDeliciosaAlboVariegata.jpeg',
+        'price': 300,
+        'countInStock': 3
+    },
+    {
+        'id': 8,
+        'name': 'Pink Syngonium',
+        'description': "Syngonium Neon Robusta is a beautiful pink variety of the popular arrowhead vine family. These subtropical climbers are a super versatile species, able to happily grow as a bushy houseplant, a vine, or as a terrarium plant – depending on how you like to grow them.",
+        'image':'/plant_images/pinkSygnonium.jpeg',
+        'price': 15,
+        'countInStock': 8
+    },
+    {
+        'id': 9,
+        'name': 'Philodendron Brasil',
+        'description': "The Philodendron Brasil is a fast-growing, easy, vining plant. Its graceful, heart-shaped leaves are dark green with yellow variegation in the center of the leaf. ... The Philodendron Brazil is incredibly forgiving and will tolerate all kinds of neglect including low light, poor soil, and inconsistent watering.",
+        'image':'/plant_images/philodendronBrasil.jpeg',
+        'price': 20,
+        'countInStock': 7
     }
 ]
 
