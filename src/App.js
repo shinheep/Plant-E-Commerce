@@ -79,7 +79,7 @@ function App() {
 
         <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps} />}/>
 
-        <Route exact path="/cart"><Cart/></Route>
+        <Route path='/cart' exact render={(routerProps) => <Cart plantInfo={plantInfo} routerProps={routerProps} />}/>
 
         <Route exact path="/login"><Login/></Route>
       </Switch>
