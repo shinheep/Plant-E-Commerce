@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/plantify/static/css/main.2a81c67e.chunk.css",
+    "main.js": "/plantify/static/js/main.64f9e090.chunk.js",
+    "main.js.map": "/plantify/static/js/main.64f9e090.chunk.js.map",
+    "runtime-main.js": "/plantify/static/js/runtime-main.5949415c.js",
+    "runtime-main.js.map": "/plantify/static/js/runtime-main.5949415c.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/plantify/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.1653fde6.chunk.js": "/plantify/static/js/2.1653fde6.chunk.js",
+    "static/js/2.1653fde6.chunk.js.map": "/plantify/static/js/2.1653fde6.chunk.js.map",
+    "static/js/3.3dc1bdc7.chunk.js": "/plantify/static/js/3.3dc1bdc7.chunk.js",
+    "static/js/3.3dc1bdc7.chunk.js.map": "/plantify/static/js/3.3dc1bdc7.chunk.js.map",
+    "index.html": "/plantify/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/plantify/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.2a81c67e.chunk.css.map": "/plantify/static/css/main.2a81c67e.chunk.css.map",
+    "static/js/2.1653fde6.chunk.js.LICENSE.txt": "/plantify/static/js/2.1653fde6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5949415c.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.1653fde6.chunk.js",
+    "static/css/main.2a81c67e.chunk.css",
+    "static/js/main.64f9e090.chunk.js"
+  ]
+}
