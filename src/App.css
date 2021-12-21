@@ -157,7 +157,42 @@
   font-family: 'Questrial', sans-serif;
 }
 
+#myPic {
+  width: 180px;
+  height: 240px;
+  border-radius: 50%;
+  margin: 10px;
+  border: 2px solid white;
+}
+
+.aboutMain {
+  text-align: left;
+  justify-content: center;
+  margin: 10px;
+  padding: 30px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+}
+
+.paragraph {
+  margin: 20px;
+}
+
+.fa-linkedin{
+  font-size: 25px;
+}
+
+.fa-github{
+  color: black;
+  font-size: 25px;
+}
+
+.fab{
+  margin: 10px;
+}
+
 
 .footer {
-  bottom: 10px;
+  bottom: 0;
+  position: static;
 }

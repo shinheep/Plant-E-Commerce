@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link, Route, Switch} from "react-router-dom"
 import './App.css';
 import Cart from './components/Cart';
+import About from './components/About';
 import Login from './components/Login';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -89,10 +90,13 @@ function App() {
 
         <Route path='/cart' exact render={(routerProps) => <Cart plantInfo={plantInfo} routerProps={routerProps} cartProp={cart}/>}/>
 
+        <Route exact path="/about"><About /></Route>
         <Route exact path="/login"><Login/></Route>
         <Route exact path="/welcome"><Welcome /></Route>
         <Route exact path="/signup"><Signup /></Route>
       </Switch>
+
+      {/* <Footer/> */}
 
     </div>
   );
