@@ -70,7 +70,56 @@ const plants = [
         'image':'/plant_images/philodendronBrasil.jpeg',
         'price': 20,
         'countInStock': 7
+    },
+    {
+        'id': 10,
+        'name': 'Pink Philodendron',
+        'description': "The Philodendron Pink Princess is one of the most stunning and beautiful houseplants to grow. With its dark green leaves and bright pink variegation, this indoor plant is rightly called the “pink princess.” Pink Princess philodendron plants grow well in pots or in hanging baskets where the trailing vines and pink leaves create a stunning showpiece.",
+        'image':'/plant_images/pinkPhilodendron.jpeg',
+        'price': 350,
+        'countInStock': 6
+    },
+    {
+        'id': 11,
+        'name': 'Neon Pothos',
+        'description': "The Neon Pothos is labeled as such for its bright green neon color throughout its leaves and stems. ‘Neon’ has all the rugged, durable characteristics that houseplant lovers expect from Pothos, but with glowing, neon-green foliage.",
+        'image':'/plant_images/neonPothos.jpeg',
+        'price': 15,
+        'countInStock': 10
+    },
+    {
+        'id': 12,
+        'name': 'Pothos N Joy',
+        'description': "A beautiful Epipremnum aureum variety that really stands out from the Pothos crowd with its signature mottled white and green variegation and small, irregular leaves.",
+        'image':'/plant_images/pothosNJoy.jpeg',
+        'price': 20,
+        'countInStock': 10
+    },
+    {
+        'id': 13,
+        'name': 'Marble Pothos',
+        'description': "The Pothos plant is our top recommendation for first time plant parents. Lovingly nicknamed the cubicle plant because it can thrive in almost any environment, the easy-care Pothos and its quick growing vines will make any space look more lush. The Marble variety is known for its variegated green and white leaves.",
+        'image':'/plant_images/marblePothos.jpeg',
+        'price': 15,
+        'countInStock': 10
+    },
+    {
+        'id': 14,
+        'name': 'Hoya Carnosa Krimson Queen',
+        'description': "Hoya Carnosa Krimson Queen is a draping succulent vine that produces clusters of star-shaped waxy flowers. Krimson Queen has green leaves with variegated borders. The variegation can be from white/cream to yellowish depending upon the growing conditions.",
+        'image':'/plant_images/hoyaCarnosaKrimsonQueen.jpg',
+        'price': 80,
+        'countInStock': 10
+    },
+    {
+        'id': 15,
+        'name': 'Hoya Carnosa Compacta',
+        'description': "Hoya carnosa compacta is a popular variety of the Hoya genus to grow as a houseplant – with good reason. This plant is great for hanging pots and ledges that will show off its verdant trailing vines.",
+        'image':'/plant_images/hoyaCarnosaCompacta.jpeg',
+        'price': 15,
+        'countInStock': 10
     }
+
 ]
 
 export default plants;

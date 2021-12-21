@@ -147,6 +147,11 @@
   border-radius: 50px;
 }
 
+.welcome{
+  font-family: 'Questrial', sans-serif;
+}
+
+
 .footer {
   bottom: 10px;
 }

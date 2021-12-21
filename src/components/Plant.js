@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
+import {useHistory} from 'react-router-dom'
 import plants from '../seed'
 import { Form } from 'react-bootstrap';
-import {Link} from 'react-router-dom'
 
 const Plant = (props) => {
 
@@ -17,12 +17,14 @@ const Plant = (props) => {
         console.log('Added!', props.routerProps.match.params.id)
     }
 
+    const history = useHistory();
+
     return (
         
         
         <div className="singlePlantContainerContainer">
             
-            <Link to='/'><button className="goBackButton">Go Back</button></Link>
+            <button onClick={history.goBack} className="goBackButton">Go Back</button>
 
             <div className="singlePlantContainer">
                 <div className="singlePlant">
