@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
-          <Navbar.Brand href="/">Plantify</Navbar.Brand>
+          <Link className="nav-link" to='/'><Navbar.Brand>Plantify</Navbar.Brand></Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
