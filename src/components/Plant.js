@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import plants from '../seed'
 import { Form } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
@@ -16,8 +16,10 @@ const Plant = (props) => {
     const addToCartHandler = (plantId) => {
         console.log('Added!', props.routerProps.match.params.id)
     }
-    
+
     return (
+        
+        
         <div className="singlePlantContainerContainer">
             
             <Link to='/'><button className="goBackButton">Go Back</button></Link>
@@ -46,7 +48,7 @@ const Plant = (props) => {
                             
                         </Form.Control>
 
-                        <button onClick={addToCartHandler} className="addToCart">Add To Cart</button>
+                        <button onClick={props.addToCart} className="addToCart">Add To Cart</button>
                     </div>
                 </div>
             </div>

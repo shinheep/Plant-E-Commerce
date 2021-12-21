@@ -133,6 +133,20 @@
   border-radius: 50px;
 }
 
+.loginContainer{
+  /* border: 1px solid red; */
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 500px;
+}
+
+.loginButton{
+  background: #095C5C;
+  color: white;
+  border-radius: 50px;
+}
+
 .footer {
   bottom: 10px;
 }

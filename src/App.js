@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Plant from './components/Plant';
 import Plants from './components/Plants';
+import Welcome from './components/Welcome';
 import plants from './seed'
 
 function App() {
@@ -15,6 +16,11 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [plantList, setPlantList] = useState([]);
   const [clearInput, setClearInput] = useState("");
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (plant) => {
+    setCart([...cart, plant]);
+  }
   
   const plantInfo = plants && plants.map(plant => (
     <div className="plant" key={plant.id}>            
@@ -74,14 +80,16 @@ function App() {
           plantData={searchTerm.length < 1 ? plantList : searchResults}
           searchKeyword={handleSearch} 
           searchTerm={searchTerm}
-          handleClearClick={handleClearClick}/>
+          handleClearClick={handleClearClick}
+          />
         </Route>
 
-        <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps} />}/>
+        <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps} addToCart={addToCart}/>}/>
 
-        <Route path='/cart' exact render={(routerProps) => <Cart plantInfo={plantInfo} routerProps={routerProps} />}/>
+        <Route path='/cart' exact render={(routerProps) => <Cart plantInfo={plantInfo} routerProps={routerProps} cartProp={cart}/>}/>
 
         <Route exact path="/login"><Login/></Route>
+        <Route exact path="/welcome"><Welcome /></Route>
       </Switch>
 
     </div>

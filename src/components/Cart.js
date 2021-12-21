@@ -1,5 +1,5 @@
 const Cart = (props) => {
-    
+    console.log(props.cartProp)
 
     return (
         <div className="cartContainer">
