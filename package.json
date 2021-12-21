@@ -1,6 +1,6 @@
 {
-  "name": "plant-frontend",
   "homepage": "https://myusername.github.io/Plantify",
+  "name": "plant-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
