@@ -147,6 +147,12 @@
   border-radius: 50px;
 }
 
+.signupButton{
+  background: #095C5C;
+  color: white;
+  border-radius: 50px;
+}
+
 .welcome{
   font-family: 'Questrial', sans-serif;
 }

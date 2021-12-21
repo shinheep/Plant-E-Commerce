@@ -13,6 +13,10 @@ const Login = () => {
                 <div><Link to="/welcome"><button className="loginButton">Log In</button></Link></div>
             </form>
 
+            <form>
+                <div>Don't have an account? <Link to='/signup'>Sign up</Link></div>
+            </form>
+
         </div>
     )
 }

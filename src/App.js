@@ -9,6 +9,7 @@ import Main from './components/Main';
 import Plant from './components/Plant';
 import Plants from './components/Plants';
 import Welcome from './components/Welcome';
+import Signup from './components/Signup';
 import plants from './seed'
 
 function App() {
@@ -90,6 +91,7 @@ function App() {
 
         <Route exact path="/login"><Login/></Route>
         <Route exact path="/welcome"><Welcome /></Route>
+        <Route exact path="/signup"><Signup /></Route>
       </Switch>
 
     </div>
