@@ -80,7 +80,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <userContext.Provider value ={{ userData, setUserData}}></userContext.Provider>
+
       <Switch>
         <Route exact path="/" >
           <Main/>
