@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Link, Route, Switch} from "react-router-dom"
+import userContext from './context/userContext';
 import './App.css';
 import Cart from './components/Cart';
 import About from './components/About';
@@ -19,6 +20,11 @@ function App() {
   const [plantList, setPlantList] = useState([]);
   const [clearInput, setClearInput] = useState("");
   const [cart, setCart] = useState([]);
+
+  const [userData, setUserData] = useState({
+    email: undefined,
+    token: undefined,
+  })
 
   const addToCart = (plant) => {
     setCart([...cart, plant]);
@@ -74,7 +80,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-
+      <userContext.Provider value ={{ userData, setUserData}}></userContext.Provider>
       <Switch>
         <Route exact path="/" >
           <Main/>

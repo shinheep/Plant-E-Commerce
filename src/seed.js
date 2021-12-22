@@ -118,8 +118,71 @@ const plants = [
         'image':'https://i.etsystatic.com/21285357/r/il/e65066/2697154326/il_570xN.2697154326_9tjp.jpg',
         'price': 15,
         'countInStock': 10
-    }
-
+    },
+    {
+        'id': 16,
+        'name': 'Sansevieriea Trifasciata',
+        'description': "Sansevieria trifasciata, commonly called snake plant or mother-in-law's tongue, is native to tropical western Africa. Small, fragrant, greenish-white flowers bloom on mature plants in spring, followed by orange berries.",
+        'image':'https://cdn.shoplightspeed.com/shops/616617/files/29080620/1652x2313x2/sansevieria-trifasciata-laurentii-10-inch.jpg',
+        'price': 20,
+        'countInStock': 10
+    },
+    {
+        'id': 17,
+        'name': 'Moonshine Sansevieriea',
+        'description': "Sansevieria Moonshine is a beautiful, upright snake plant with broad silvery green leaves. It enjoys bright indirect light. In low light conditions, the leaves may turn a darker green but keep its silvery sheen. Moonshine is drought-tolerant.",
+        'image':'https://www.chooseyourplant.com/images/plants/sansevieria-trifasciata-moonshine-10.jpg',
+        'price': 20,
+        'countInStock': 10
+    },
+    {
+        'id': 18,
+        'name': 'Starfish Sansevieriea',
+        'description': "Starfish Sansevieria 'Boncel' plants are rare but worth searching for. They are a more compact hybrid of Sansevieria cylindrica, or snake plant, a more common succulent. The plant has fan-shaped, light green foliage with dark green concentric circles from the top to the bottom of the leaf.",
+        'image':'https://res.cloudinary.com/dizexseir/image/upload/v1627912030/ProImages/vc4548ny8kqottpslfmr.jpg',
+        'price': 20,
+        'countInStock': 10
+    },
+    {
+        'id': 19,
+        'name': 'Syngonium Albo Variegated',
+        'description': "Syngonium Podophyllum Albo-Variegatum also known as arrowhead plant is a desirable aroid that boast arrow-shaped leaves and beautiful chimeric variegation. Syngonium is a considered a fast growing climber from the Aracae family. This variegated form is unusual by having large blotches of white on the leaves and stems.",
+        'image':'https://cdn.shopify.com/s/files/1/0045/4613/4065/products/image_1d356a76-daa8-48ab-b5a0-56540417a4e1_900x.jpg?v=1623240535',
+        'price': 150,
+        'countInStock': 10
+    },
+    {
+        'id': 20,
+        'name': 'Syngonium',
+        'description': "Syngonium podophyllum, commonly called arrowhead vine, is native from Mexico to Ecuador. It is an evergreen climbing vine that typically grows to 3-6' long. As a houseplant, it is typically grown for its attractive ornamental foliage which changes shape as the leaves mature.",
+        'image':'https://cdn11.bigcommerce.com/s-2drwt2az/images/stencil/original/products/51134/118322/apihei8i7__20258.1632244062.jpg?c=2',
+        'price': 15,
+        'countInStock': 10
+    },
+    {
+        'id': 21,
+        'name': 'Philodendron Mican',
+        'description': "Philodendron hederaceum 'Micans' has iridescent, heart-shaped leaves that are velvety to the touch and almost quilted in texture. Depending on the light, the color of the foliage can look deep green or rich purple, with the new leaves emerging chartreuse, edged with pink.",
+        'image':'https://d15pr4d5dgcodk.cloudfront.net/eyJidWNrZXQiOiAiY2FyZS1wbGFudC1wcm9maWxlIiwgImtleSI6ICI2OTU0Mi8xQkY2RTA5Ny00ODlDLTQ0RkMtQURBNy1DMjU3NkZEQ0Y2MzUucG5nIiwgImVkaXRzIjogeyJyb3RhdGUiOiBudWxsLCAicmVzaXplIjogeyJ3aWR0aCI6IDEwMDAsICJmaXQiOiAiY292ZXIiLCAiaGVpZ2h0IjogMTAwMH0sICJ0b0Zvcm1hdCI6ICJqcGVnIn19',
+        'price': 30,
+        'countInStock': 10
+    },
+    {
+        'id': 22,
+        'name': 'Alocosia Black Velvet',
+        'description': "The Alocasia 'Black Velvet' (Alocasia reginula) is a popular miniature jewel alocasia with characteristic dark foliage and a compact growth habit. Named for both its regal appearance and black velvety leaves, which are contrasted beautifully by the piercing white venation. Truly, a real dark gem of a plant.",
+        'image':'https://www.myhomenature.com/media/catalog/product/cache/ffd31fc79275d8558301739491be228c/a/l/alocasia_reginula_black_velvet_11.jpg',
+        'price': 50,
+        'countInStock': 10
+    },
+    {
+        'id': 23,
+        'name': 'Satin Pothos',
+        'description': "The satin pothos (Scindapsus pictus) is a vine plant that has dark green leaves with silvery markings. This slow-growing trailing houseplant is very easy to care for. The eye-catching tropical plant looks stunning, growing in hanging baskets or climbing up a moss pole.",
+        'image':'https://wolvesinlondon.files.wordpress.com/2020/11/18a4b02e-e730-4a26-86ad-085a3e03edb8.jpeg',
+        'price': 20,
+        'countInStock': 10
+    },
 ]
 
 export default plants;

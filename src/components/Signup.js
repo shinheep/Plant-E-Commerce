@@ -1,4 +1,5 @@
 const Signup = () => {
+    
     return(
         <div className="signupContainer">
             <h1>Plantify</h1>
@@ -8,6 +9,8 @@ const Signup = () => {
             <div><input type='password' placeholder='Password'/></div>
             <button className="signupButton">Sign up</button>
         </div>
+
+     
     )
 }
 

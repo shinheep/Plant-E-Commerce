@@ -33,9 +33,9 @@ const Plant = (props) => {
                     <div className="plantInfo">
                         <div className="indivPlantName">{selectedPlant[0].name}</div>
                         <div className="indivPlantDescription">{selectedPlant[0].description}</div>
-                        <div className="indivPlantPrice">Price: ${selectedPlant[0].price}</div>
+                        {/* <div className="indivPlantPrice">Price: ${selectedPlant[0].price}</div> */}
 
-                        <Form.Control
+                        {/* <Form.Control
                             as="select"
                             value={qty}
                             onChange={(e) => setQty(e.target.value)}
@@ -48,9 +48,9 @@ const Plant = (props) => {
                                 ))
                             }
                             
-                        </Form.Control>
+                        </Form.Control> */}
 
-                        <button onClick={props.addToCart} className="addToCart">Add To Cart</button>
+                        {/* <button onClick={props.addToCart} className="addToCart">Add To Cart</button> */}
                     </div>
                 </div>
             </div>
