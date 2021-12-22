@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {Link, Route, Switch} from "react-router-dom"
-import userContext from './context/userContext';
 import './App.css';
 import Cart from './components/Cart';
 import About from './components/About';
