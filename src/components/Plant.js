@@ -4,8 +4,6 @@ import plants from '../seed'
 import { Form } from 'react-bootstrap';
 
 const Plant = (props) => {
-
-    const [qty, setQty] = useState(1)
     
     const selectedPlant = plants.filter((plant) => {
         return(
@@ -13,9 +11,6 @@ const Plant = (props) => {
         )
     })
 
-    const addToCartHandler = (plantId) => {
-        console.log('Added!', props.routerProps.match.params.id)
-    }
 
     const history = useHistory();
 

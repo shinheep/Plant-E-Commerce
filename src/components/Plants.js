@@ -18,11 +18,6 @@ const Plants = (props) => {
                     placeholder="Search for a Plant"
                     value={props.searchTerm}
                     onChange={getSearchTerm} />
-                <button className="plantSearchButton" onClick={() => {
-                    props.handleClearClick({getSearchTerm})
-                }}>
-                    Search
-                </button>
             </form>
             
             <div className="plants">

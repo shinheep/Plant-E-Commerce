@@ -4,7 +4,6 @@ import './App.css';
 import Cart from './components/Cart';
 import About from './components/About';
 import Login from './components/Login';
-import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
 import Plant from './components/Plant';
@@ -17,17 +16,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResults] = useState([]);
   const [plantList, setPlantList] = useState([]);
-  const [clearInput, setClearInput] = useState("");
-  const [cart, setCart] = useState([]);
 
-  const [userData, setUserData] = useState({
-    email: undefined,
-    token: undefined,
-  })
-
-  const addToCart = (plant) => {
-    setCart([...cart, plant]);
-  }
   
   const plantInfo = plants && plants.map(plant => (
     <div className="plant" key={plant.id}>            
@@ -69,12 +58,6 @@ function App() {
       }
   };
 
-
-  const handleClearClick = () => {
-    setClearInput(0);
-    setSearchTerm("");
-    setSearchResults(plantList);
-  };
   
   return (
     <div className="App">
@@ -87,13 +70,12 @@ function App() {
           plantData={searchTerm.length < 1 ? plantList : searchResults}
           searchKeyword={handleSearch} 
           searchTerm={searchTerm}
-          handleClearClick={handleClearClick}
           />
         </Route>
 
-        <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps} addToCart={addToCart}/>}/>
+        <Route path='/plant/:id' exact render={(routerProps) => <Plant plantInfo={plantInfo} routerProps={routerProps}/>}/>
 
-        <Route path='/cart' exact render={(routerProps) => <Cart plantInfo={plantInfo} routerProps={routerProps} cartProp={cart}/>}/>
+        <Route path='/cart' exact render={(routerProps) => <Cart plantInfo={plantInfo} routerProps={routerProps}/>}/>
 
         <Route exact path="/about"><About /></Route>
         <Route exact path="/login"><Login/></Route>
@@ -101,7 +83,6 @@ function App() {
         <Route exact path="/signup"><Signup /></Route>
       </Switch>
 
-      {/* <Footer/> */}
 
     </div>
   );

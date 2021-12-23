@@ -2,7 +2,7 @@
 
 ## Project Links
 
-TBD.
+https://shinheep.github.io/Plantify/#/ 
 
 ## Project Description
 
@@ -14,40 +14,41 @@ https://res.cloudinary.com/dxqwpud0l/image/upload/v1639627338/Screen_Shot_2021-1
 
 #### MVP Items
 
-- Django Backend
-    - Plant API
-    - User Authentication
-- Populate front end with Plant API Data
-    - Plants Page
-    - Individual Plant Page
-- Add to Cart Function
-- Delete from Cart Function
-- Mobile-First Responsive Design
-- CSS Styling
+- Populate front end with Plant API Data ✅
+    - Plants Page ✅
+    - Individual Plant Page ✅
+- Mobile-First Responsive Design ✅
+- CSS Styling ✅
 
 #### PostMVP Items
 
-- Search Function for Plants
+- Search Function for Plants ✅
+- About Me Section ✅
+- Django Backend ✅
+    - Plant API ✅
+    - User Authentication ✅
 - Shopping Cart Functionality
 - Sign Up/Log In Functionality
 - Checkout Cart as a User
-- About Me Section
+- Add to Cart Function
+- Delete from Cart Function
+
 
 ## Components
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Nav Bar | Medium | 2 hrs| - hrs | 
-| Plants Page | High | 5 hrs| - hrs |
-| Individual Plant Page | High | 5 hrs| - hrs |
-| Search Bar | Medium | 4 hrs| - hrs |
-| Shopping Cart | Medium | 8 hrs| - hrs |
-| Check Out | Low | 8 hrs| - hrs |
-| Sign Up | High | 6 hrs| - hrs | 
-| Log In | High | 6 hrs| - hrs | 
-| Footer | Low | 1 hrs| - hrs | 
+| Nav Bar | Medium | 2 hrs| 1 hrs | 
+| Plants Page | High | 5 hrs| 4 hrs |
+| Individual Plant Page | High | 5 hrs| 6 hrs |
+| Search Bar | Medium | 4 hrs| 8 hrs |
+| Shopping Cart | Medium | 8 hrs| 3 hrs |
+| Check Out | Low | 8 hrs| 0 hrs |
+| Sign Up | High | 6 hrs| 3 hrs | 
+| Log In | High | 6 hrs| 3 hrs | 
+| Footer | Low | 1 hrs| 0.5 hrs | 
 
-| Total | | 45 hrs | - hrs
+| Total | | 45 hrs | 28.5 hrs
 
 ## Additional Libraries
 
@@ -56,4 +57,25 @@ Font Awesome
 
 ## Code Snippet
 
-Here, I will have a code snippet I am proud of. TBD.
+I am proud of this code snippet of my controlled search bar.
+
+```js
+const handleSearch = (searchTerm) => {
+      console.log("Plant found!");
+      setSearchTerm(searchTerm);
+      if (searchTerm !== "") {
+         const newPlantList = plantList.filter((plant) => {
+           console.log('plant', plant)
+           console.log('plantName', plant.props.children[0].props.children.props.alt)
+             return Object.values(plant.props.children[0].props.children.props.alt)
+              .join("")
+              .toLowerCase()
+              .includes(searchTerm.toLowerCase());
+         })
+         setSearchResults(newPlantList);
+      } else {
+          setSearchResults(plantList);
+      }
+  };
+```
+
