@@ -14,8 +14,7 @@ View the GIF of my project here:
 
 ## Wireframes
 
-![Wireframes](https://res.cloudinary.com/dxqwpud0l/image/upload/v1639627338/Screen_Shot_2021-12-15_at_8.01.29_PM_ogwdap.png "Wireframes")
-
+https://res.cloudinary.com/dxqwpud0l/image/upload/v1639627338/Screen_Shot_2021-12-15_at_8.01.29_PM_ogwdap.png
 
 #### MVP Items
 
