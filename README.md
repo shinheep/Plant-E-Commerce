@@ -8,6 +8,10 @@ https://shinheep.github.io/Plantify/#/
 
 For this project, I will be creating a full stack Plant E-Commerce Application! I wanted to combine something that I love (🪴) and the new technologies I recently learned to create a fully functional E-Commerce app. I will be building out the backend with Django, and the frontend with React. If completed correctly, users will be able to browse through different plants, click on each individual plant to see more info about that plant, add to their cart, and checkout their cart after they've signed up/logged in as a user.
 
+View the GIF of my project here:
+
+![Alt Text](https://res.cloudinary.com/dxqwpud0l/image/upload/v1643590469/Screen_Recording_2022-01-30_at_4_49_37_PM_AdobeCreativeCloudExpress_1_uxnark.gif)
+
 ## Wireframes
 
 https://res.cloudinary.com/dxqwpud0l/image/upload/v1639627338/Screen_Shot_2021-12-15_at_8.01.29_PM_ogwdap.png
