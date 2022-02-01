@@ -31,11 +31,6 @@ https://res.cloudinary.com/dxqwpud0l/image/upload/v1639627338/Screen_Shot_2021-1
 - Django Backend ✅
     - Plant API ✅
     - User Authentication ✅
-- Shopping Cart Functionality
-- Sign Up/Log In Functionality
-- Checkout Cart as a User
-- Add to Cart Function
-- Delete from Cart Function
 
 
 ## Components
