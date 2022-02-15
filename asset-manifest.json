@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Plantify/static/css/main.6842c429.chunk.css",
-    "main.js": "/Plantify/static/js/main.7ee42dab.chunk.js",
-    "main.js.map": "/Plantify/static/js/main.7ee42dab.chunk.js.map",
+    "main.js": "/Plantify/static/js/main.d49914b6.chunk.js",
+    "main.js.map": "/Plantify/static/js/main.d49914b6.chunk.js.map",
     "runtime-main.js": "/Plantify/static/js/runtime-main.b6e65564.js",
     "runtime-main.js.map": "/Plantify/static/js/runtime-main.b6e65564.js.map",
     "static/css/2.0a9ec390.chunk.css": "/Plantify/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.929b8c91.chunk.js": "/Plantify/static/js/2.929b8c91.chunk.js",
-    "static/js/2.929b8c91.chunk.js.map": "/Plantify/static/js/2.929b8c91.chunk.js.map",
+    "static/js/2.8c2c7d0c.chunk.js": "/Plantify/static/js/2.8c2c7d0c.chunk.js",
+    "static/js/2.8c2c7d0c.chunk.js.map": "/Plantify/static/js/2.8c2c7d0c.chunk.js.map",
     "static/js/3.a6b23c81.chunk.js": "/Plantify/static/js/3.a6b23c81.chunk.js",
     "static/js/3.a6b23c81.chunk.js.map": "/Plantify/static/js/3.a6b23c81.chunk.js.map",
     "index.html": "/Plantify/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/Plantify/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.6842c429.chunk.css.map": "/Plantify/static/css/main.6842c429.chunk.css.map",
-    "static/js/2.929b8c91.chunk.js.LICENSE.txt": "/Plantify/static/js/2.929b8c91.chunk.js.LICENSE.txt"
+    "static/js/2.8c2c7d0c.chunk.js.LICENSE.txt": "/Plantify/static/js/2.8c2c7d0c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b6e65564.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.929b8c91.chunk.js",
+    "static/js/2.8c2c7d0c.chunk.js",
     "static/css/main.6842c429.chunk.css",
-    "static/js/main.7ee42dab.chunk.js"
+    "static/js/main.d49914b6.chunk.js"
   ]
 }
