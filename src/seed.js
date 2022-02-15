@@ -144,14 +144,6 @@ const plants = [
         'countInStock': 10
     },
     {
-        'id': 19,
-        'name': 'Syngonium Albo Variegated',
-        'description': "Syngonium Podophyllum Albo-Variegatum also known as arrowhead plant is a desirable aroid that boast arrow-shaped leaves and beautiful chimeric variegation. Syngonium is a considered a fast growing climber from the Aracae family. This variegated form is unusual by having large blotches of white on the leaves and stems.",
-        'image':'https://cdn.shopify.com/s/files/1/0045/4613/4065/products/image_1d356a76-daa8-48ab-b5a0-56540417a4e1_900x.jpg?v=1623240535',
-        'price': 150,
-        'countInStock': 10
-    },
-    {
         'id': 20,
         'name': 'Syngonium',
         'description': "Syngonium podophyllum, commonly called arrowhead vine, is native from Mexico to Ecuador. It is an evergreen climbing vine that typically grows to 3-6' long. As a houseplant, it is typically grown for its attractive ornamental foliage which changes shape as the leaves mature.",
