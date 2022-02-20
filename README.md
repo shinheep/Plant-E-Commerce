@@ -10,7 +10,7 @@ For this project, I will be creating a full stack Plant E-Commerce Application! 
 
 View the GIF of my project here:
 
-![Alt Text](https://res.cloudinary.com/dxqwpud0l/image/upload/v1645210273/Screen_Recording_2022-02-18_at_10_49_17_AM_AdobeCreativeCloudExpress_i5l5af.gif)
+<img src="https://res.cloudinary.com/dxqwpud0l/image/upload/v1645210273/Screen_Recording_2022-02-18_at_10_49_17_AM_AdobeCreativeCloudExpress_i5l5af.gif" width="250" height="250"/>
 
 ## Wireframes
 
